@@ -1,0 +1,1185 @@
+: 1737289298:0;sudo pacman -Syy
+: 1737289309:0;reboot
+: 1737289568:0;poweroff
+: 1737293664:0;git clone https://aur.archlinux.org/yay-bin.git\
+
+: 1737293670:0;cd yay
+: 1737293682:0;cd yay-bin\
+
+: 1737293689:0;makepkg -si\
+
+: 1737293707:0;clear
+: 1737293743:0;yay --version
+: 1737293748:0;exit
+: 1737293859:0;sudo pacman -S podman
+: 1737294064:0;podman images
+: 1737294069:0;clear
+: 1737294085:0;sudo pacman -S btop
+: 1737294091:0;clear
+: 1737294092:0;btop
+: 1737294112:0;clear
+: 1737294135:0;exit
+: 1737294217:0;yay visual-studio-code-bin
+: 1737294348:0;clear
+: 1737294811:0;poweroff
+: 1737300761:0;yay -S ttf-bangla-fonts\
+
+: 1737300772:0;sudo pacman -S ttf-bangla-fonts
+: 1737300784:0;sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji\
+
+: 1737300843:0;clear
+: 1737300850:0;yay -S ibus
+: 1737300872:0;exit
+: 1737345767:0;yay -S xmapp
+: 1737345779:0;yay xmapp
+: 1737345914:0;cat /etc/pacman.conf
+: 1737345944:0;kate /etc/pacman.conf
+: 1737346078:0;reset
+: 1737346087:0;yay xampp
+: 1737348116:0;reboot
+: 1737425745:0;touch server
+: 1737425758:0;rm server
+: 1737425769:0;mkdir server
+: 1737425773:0;cd server
+: 1737426230:0;mkdir nginx
+: 1737426339:0;mv nginx.md ./nginx
+: 1737426346:0;cd nginx
+: 1737426351:0;..
+: 1737426355:0;code .
+: 1737436492:0;podman pull container-registry.oracle.com/database/free:23.5.0.0-lite\
+
+: 1737437658:0;podman images
+: 1737438864:0;podman pull container-registry.oracle.com/database/free:23.5.0.0-lite\
+
+: 1737440677:0;cat /etc/pacman.conf
+: 1737441127:0;kate /etc/pacman.d/mirrorlist\
+
+: 1737441450:0;podman run -d -p 1521:1521 --name oracle-yasin  container-registry.oracle.com/database/free:23.5.0.0-lite\
+
+: 1737441465:0;podman exec -it oracle-db ./setPassword.sh 123456\
+
+: 1737441474:0;podman exec -it oracle-yasin ./setPassword.sh 123456\
+
+: 1737441504:0;podman images
+: 1737441515:0;podman run -d -p 1521:1521 --name oracle-yasin  container-registry.oracle.com/database/free:23.5.0.0-lite\
+
+: 1737441527:0;podman exec -it oracle-yasin ./setPassword.sh 12345\
+
+: 1737441558:0;clear
+: 1737441593:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737441611:0;exit
+: 1737442410:0;yay -S microsoft-edge-stable\
+
+: 1737446178:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737446529:0;exit
+: 1737449876:0;mkdir ubuntu_server
+: 1737449884:0;cd ubuntu_server
+: 1737449888:0;cd ..
+: 1737449894:0;code . 
+: 1737450552:0;ifconfig
+: 1737451069:0;ip route
+: 1737451596:0;clear
+: 1737451598:0;ifconfig
+: 1737451600:0;ip route
+: 1737451878:0;git init
+: 1737451905:0;git remote add https://github.com/yasin-arafat-05/server.git
+: 1737451925:0;git remote add origin https://github.com/yasin-arafat-05/server.git
+: 1737451931:0;git remote -v
+: 1737451933:0;clear
+: 1737451939:0;git add . 
+: 1737451950:0;git branch -M main
+: 1737451953:0;clear
+: 1737451955:0;git add .
+: 1737451960:0;git commit -m "server"
+: 1737451997:0;git config --global user.email yasinarafat.e2021@gmail.com
+: 1737452003:0;git config --global user.email
+: 1737452018:0;git config --global user.name yasin-arafat-05
+: 1737452019:0;clear
+: 1737452021:0;git add .
+: 1737452023:0;git commit -m "server"
+: 1737452036:0;git push -u origin main
+: 1737452089:0;clear
+: 1737452091:0;git push -u origin main
+: 1737452120:0;git pull
+: 1737452140:0;git pull origin main
+: 1737452155:0;git pull --rebase 
+: 1737452164:0;git pull origin main
+: 1737452169:0;git push -u origin main
+: 1737452208:0;git pull origin main
+: 1737452225:0;git pull -f origin main
+: 1737452235:0;git logs
+: 1737452238:0;git log
+: 1737452246:0;git log oneline
+: 1737452253:0;git log --oneline
+: 1737452264:0;git push -f origin mian
+: 1737452281:0;git push -u origin main
+: 1737452287:0;git pull origin main
+: 1737452325:0;git config pull.rebase false\
+git pull origin main\
+
+: 1737452340:0;git push -u origin main\
+
+: 1737452374:0;clear
+: 1737452377:0;git clone https://github.com/yasin-arafat-05/server.git
+: 1737452419:0;code .
+: 1737452477:0;sudo pacman -S ttf-ubuntu-font-family ttf-siyam-rupali fonts-bengali\
+
+: 1737452491:0;sudo pacman -S ttf-ubuntu-font-family\
+
+: 1737452499:0;exit
+: 1737452519:0;git add .
+: 1737452525:0;git commit -m "server"
+: 1737452527:0;git push -u origin main\
+
+: 1737452638:0;yay -S ibus-avro-git
+: 1737452825:0;exit
+: 1737453082:0;sudo pacman -S pango harfbuzz
+: 1737453113:0;reboot
+: 1737453323:0;sudo pacman -S ttf-bengali-fonts
+: 1737453576:0;sudo pacman -R gnu-free-fonts
+: 1737453584:0;reboot
+: 1737454136:0;git clone https://github.com/yasin-arafat-05/Mynotes.git
+: 1737454470:0;ifconfig
+: 1737454474:0;ip route
+: 1737454964:0;clear
+: 1737454969:0;ipcalc
+: 1737455010:0;sudo pacman -S ipcalc\
+
+: 1737455041:0;ipcalc
+: 1737455092:0;clar
+: 1737455095:0;clear
+: 1737455100:0;ip route
+: 1737455106:0;ifconfig
+: 1737455119:0;clear
+: 1737455126:0;ip route
+: 1737455159:0;ipcalc 10.27.60.10 255.255.244.0
+: 1737455206:0;ipcalc 10.27.60.10 255.255.224.0\
+
+: 1737455214:0;CLEAR
+: 1737455217:0;clear
+: 1737455221:0;ipconfig
+: 1737455226:0;ifconfig
+: 1737456713:0;clear
+: 1737456716:0;ip route
+: 1737456736:0;ifconfig
+: 1737456743:0;ipcalc 10.27.60.10 255.255.224.0
+: 1737457431:0;yay -S spatacle\
+
+: 1737457456:0;yay spatacle
+: 1737457487:0;yay spectacle
+: 1737472362:0;git add . 
+: 1737472365:0;git commit -m "server"
+: 1737472367:0;git push -u origin main\
+
+: 1737473179:0;clear
+: 1737473180:0;exit
+: 1737473722:0;sudo pacman -S uim uim-mozc\
+
+: 1737473756:0;sudo pacman -S scim scim-mozc\
+
+: 1737473775:0;yay uim
+: 1737473883:0;uim
+: 1737473980:0;sudo pacman -S uim-toolbar-gtk3\
+\
+
+: 1737473994:0;yay  -S uim-toolbar-gtk3\
+
+: 1737474013:0;sudo pacman -R uim-toolbar-gtk3\
+\
+
+: 1737474044:0;sudo pacman -R uim uim-mozc\
+
+: 1737474065:0;clear\
+
+: 1737474069:0;pacman -Qq
+: 1737474282:0;sudo pacman -S fcitx5 fcitx5-configtool fcitx5-bangla\
+
+: 1737474353:0;sudo pacman -S fcitx5 fcitx5-configtool\
+
+: 1737474641:0;sudo pacman -R fcitx5 fcitx5-configtool\
+
+: 1737474704:0;sudo pacman -Rdd fcitx5 fcitx5-configtool\
+
+: 1737512187:0;exit
+: 1737513176:0;ifconfig
+: 1737513186:0;ip route
+: 1737513213:0;ipcalc 192.168.0.1 255.255.255.0
+: 1737513242:0;exit
+: 1737517660:0;git clone https://github.com/yasin-arafat-05/Mynotes.git
+: 1737517681:0;code .
+: 1737517751:0;clear\
+
+: 1737517817:0;exit
+: 1737517838:0;cd Arch_Linux
+: 1737517840:0;clear
+: 1737517855:0;git add "04_bangla_fonts.md"
+: 1737517868:0;git commit -m "bangla_fonts"
+: 1737517871:0;git push -u origin main\
+
+: 1737548527:0;sudo pacman -S google-chrome
+: 1737548553:0;yay -S google-chrome
+: 1737548613:0;clear
+: 1737548615:0;yay -S google-chrome
+: 1737548624:0;clear
+: 1737548626:0;yay -S google-chrome
+: 1737548967:0;yay -S ibus
+: 1737553834:0;code .
+: 1737559831:0;sudo pacman -S gparted
+: 1737559893:0;exit
+: 1737604736:0;git add "aws"
+: 1737604741:0;git commit -m "aws"
+: 1737604744:0;git push -u origin main\
+
+: 1737604748:0;clear
+: 1737610583:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737610593:0;podman ps -a
+: 1737610601:0;podman run oracle-yasin
+: 1737610611:0;podman start oracle-yasin
+: 1737610613:0;clear
+: 1737610617:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737610641:0;clear
+: 1737610652:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737613020:0;podman start oracle-yasin
+: 1737613028:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737613033:0;clear
+: 1737613035:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737613058:0;podman stop oracle-yasin
+: 1737618489:0;podman start oracle-yasin
+: 1737618492:0;clear
+: 1737618500:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737618796:0;git clone https://github.com/yasin-arafat-05/Database.git
+: 1737618961:0;clear
+: 1737618963:0;code .
+: 1737629373:0;podman start oracle-yasin
+: 1737629379:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737629421:0;podman stop oracle-yasin
+: 1737637547:0;yay -S aws-cli-v2\
+
+: 1737637723:0;aws --help
+: 1737637733:0;aws -h
+: 1737637736:0;clear
+: 1737637739:0;aws --version
+: 1737637917:0;aws help
+: 1737637965:0;clear
+: 1737637991:0;aws --version
+: 1737638031:0;aws iam list-users
+: 1737640412:0;aws configure
+: 1737640527:0;aws iam list-users
+: 1737642063:0;aws configure
+: 1737642171:0;aws iam list-users
+: 1737642178:0;exit
+: 1737647676:0;yay -S filelight
+: 1737647690:0;exit
+: 1737686631:0;find ~ -name ".*" -type f\
+
+: 1737686716:0;du -ah ~ | grep '/\..*'\
+
+: 1737687111:0;sudo pacman -S chezmoi
+: 1737687339:0;pwd
+: 1737687347:0;cd ..
+: 1737687349:0;clear
+: 1737687350:0;ls
+: 1737687359:0;du -ah ~ | grep '/\..*'\
+
+: 1737687372:0;clear
+: 1737687372:0;ls
+: 1737687387:0;chezmoi init
+: 1737687390:0;ls
+: 1737687393:0;ls -lart
+: 1737687417:0;chezmoi edit
+: 1737687437:0;kate chezmoi edit
+: 1737687485:0;EDITOR="code" gc
+: 1737687523:0;EDITOR="code" chezmoi edit 
+: 1737687546:0;clear
+: 1737687783:0;ls
+: 1737687823:0;git status
+: 1737687829:0;clear
+: 1737687900:0;git remote add origin https://github.com/yasin-arafat-05/dotfiles.git
+: 1737687906:0;git branch -M main
+: 1737687908:0;clear
+: 1737688107:0;which zsh
+: 1737688112:0;ls
+: 1737688115:0;cd
+: 1737688117:0;ls
+: 1737688120:0;ls -lart
+: 1737688175:0;chezmoi .zshrc 
+: 1737688187:0;chezmoi add .zshrc
+: 1737688223:0;chezmoi cd
+: 1737688227:0;ls
+: 1737688235:0;ls -lart
+: 1737688241:0;clear
+: 1737688244:0;ls
+: 1737688250:0;clear
+: 1737688268:0;chezmoi apply
+: 1737688290:0;git add .
+: 1737688299:0;git commit -m "zshrc"
+: 1737688303:0;git push -u origin main\
+
+: 1737688317:0;git pull --rebase main 
+: 1737688330:0;git pull --rebase 
+: 1737688346:0;git pull origin main
+: 1737688361:0;git pull --no-rebase
+: 1737688367:0;clear
+: 1737688372:0;git push -u origin main\
+
+: 1737688387:0;git push --help
+: 1737688454:0;git push -f origin main
+: 1737688460:0;clear
+: 1737692319:0;git add .
+: 1737692325:0;git commit -m "aws"
+: 1737692327:0;git push -f origin main
+: 1737692330:0;exit
+: 1737693681:0;pwd
+: 1737693682:0;clear
+: 1737693689:0;vim test.txt
+: 1737693807:0;ls
+: 1737693814:0;ls -lart
+: 1737693922:0;clear
+: 1737693925:0;cat text.txt
+: 1737693928:0;ls
+: 1737693934:0;cat test.txt
+: 1737693940:0;rm text.txt
+: 1737693950:0;sudo rm -rf text.txt
+: 1737693955:0;clear
+: 1737693955:0;ls
+: 1737693965:0;rm -rf test.txt
+: 1737693967:0;ls
+: 1737693975:0;clear
+: 1737695383:0;ls
+: 1737695404:0;cd Arch_Linux/shell_scripting
+: 1737695406:0;clear
+: 1737695408:0;cd
+: 1737695408:0;ls
+: 1737695411:0;clear
+: 1737695415:0;ls 
+: 1737695419:0;pwd
+: 1737695540:0;cd Arch_Linux/shell_scripting
+: 1737695544:0;clear
+: 1737695545:0;pwd
+: 1737695549:0;ls -lart
+: 1737696008:0;chmod 754 first_shell_script.sh
+: 1737696012:0;ls -lart
+: 1737696028:0;./first_shell_script.sh
+: 1737696036:0;clear
+: 1737696039:0;git add .
+: 1737696052:0;git commit -m "shell_scripting"
+: 1737696061:0;git push -u origin main
+: 1737696065:0;clear
+: 1737696066:0;exit
+: 1737707641:0;cd Arch_Linux/shell_scripting
+: 1737707642:0;claer
+: 1737707643:0;clear
+: 1737707644:0;ls
+: 1737707662:0;chmod 754  day_02_varibale.sh
+: 1737707664:0;ls -lart
+: 1737707696:0;cleawr
+: 1737707698:0;clear
+: 1737707698:0;ls
+: 1737707702:0;ls -lart
+: 1737707712:0;./day_02_variable.sh
+: 1737708023:0;/bin/bash "/home/yasin/all_program/Mynotes/Arch_Linux/shell_scripting/day_02_variable.sh"
+: 1737708874:0;clear
+: 1737708893:0;./day_02_variable.sh 2ndArgument 3rdArgument 4thArgument 5thArgument 
+: 1737708912:0;clear
+: 1737708914:0;cd Arch_Linux/shell_scripting
+: 1737708916:0;clear
+: 1737708923:0;./day_02_variable.sh 2ndArgument 3rdArgument 4thArgument 5thArgument 
+: 1737708960:0;clear
+: 1737709669:0;/bin/bash "/home/yasin/all_program/Mynotes/Arch_Linux/shell_scripting/day_02_variable.sh"
+: 1737741054:0;git add .
+: 1737741056:0;git commit -m "shell_scripting"
+: 1737741058:0;git push -u origin main
+: 1737741064:0;exit
+: 1737826235:0;kate ~/.zshrc
+: 1737826271:0;yay -S neofetch
+: 1737826349:0;bash
+: 1737826719:0;podman pull archlinux
+: 1737826769:0;podman run -it archlinux
+: 1737826858:0;pwd
+: 1737827112:0;podman images
+: 1737827127:0;podman rmi 7f8fbefc2e63
+: 1737827144:0;podman rmi -f 7f8fbefc2e63
+: 1737827146:0;clear
+: 1737827148:0;exit
+: 1737827417:0;/bin/bash "/home/yasin/all_program/Mynotes/Arch_Linux/shell_scripting/day_02_variable.sh"
+: 1737858381:0;clear
+: 1737858384:0;/bin/bash "/home/yasin/all_program/Mynotes/Arch_Linux/shell_scripting/day_02_variable.sh"
+: 1737858479:0;clear
+: 1737858558:0;/bin/bash "/home/yasin/all_program/Mynotes/Arch_Linux/shell_scripting/day_02_variable.sh"
+: 1737859738:0;clear
+: 1737859760:0;/bin/bash "/home/yasin/all_program/Mynotes/Arch_Linux/shell_scripting/day_02_variable.sh"
+: 1737859841:0;git add .
+: 1737859843:0;git commit -m "shell_scripting"
+: 1737859846:0;git push -u origin main
+: 1737859852:0;exit
+: 1737860239:0;sudo pacman -S nginx
+: 1737860265:0;clear
+: 1737860301:0;sudo systemctl status nginx
+: 1737860492:0;sudo systemctl enable nginx
+: 1737860504:0;sudo systemctl status nginx
+: 1737860515:0;sudo systemctl start nginx
+: 1737860520:0;sudo systemctl status nginx
+: 1737861050:0;clear
+: 1737861072:0;cd /etc/nginx
+: 1737861073:0;clear
+: 1737861075:0;ls
+: 1737861350:0;cat nginx.conf
+: 1737863386:0;git add .
+: 1737863392:0;git commit -m "nginx"
+: 1737863395:0;git push -u origin main
+: 1737863398:0;exit
+: 1737863699:0;podman start oracle-yasin
+: 1737863703:0;clear
+: 1737863712:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737871642:0;podman start oracle-yasin
+: 1737871643:0;clear
+: 1737871647:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737871663:0;clear
+: 1737871665:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737871683:0;podman start oracle-yasin
+: 1737871687:0;podman ps 
+: 1737871692:0;clear
+: 1737871694:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737871771:0;clear
+: 1737871791:0;sudo systemctl status nginx
+: 1737871832:0;sudo systemctl stop nginx
+: 1737871834:0;clear
+: 1737871839:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737871854:0;clear
+: 1737871860:0;podman ps 
+: 1737871868:0;reboot
+: 1737871942:0;podman ps -a
+: 1737871951:0;podman start oracle-yasin
+: 1737871953:0;clear
+: 1737871956:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737871969:0;clear
+: 1737871972:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737871987:0;clear
+: 1737871994:0;podman ps
+: 1737872050:0;podman exec -it oracle-yasin sqlplus system/12345@localhost:1521/free
+: 1737873965:0;pwd
+: 1737874312:0;git status
+: 1737878390:0;ls -lart
+: 1737878419:0;clear
+: 1737878469:0;chezmoi cd
+: 1737878473:0;pwd
+: 1737878486:0;exit
+: 1737878491:0;cd ~
+: 1737878554:0;chezmoi status
+: 1737878572:0;chezmoi re-add 
+: 1737878586:0;chezmoi cd
+: 1737878587:0;ls
+: 1737878597:0;cat dot_zshrc
+: 1737878959:0;notify-send "hi"
+: 1737878967:0;notify-send "hi" "there"
+: 1737879060:0;ls -lart
+: 1737886098:0;pwd
+: 1737886099:0;clear
+: 1737886108:0;cd /etc/nginx
+: 1737886109:0;ls
+: 1737886151:0;ls -lart
+: 1737886358:0;cat nginx.cong
+: 1737886364:0;cat nginx.conf
+: 1737886433:0;cd /usr/share/nginx/html
+: 1737886437:0;ls -lart
+: 1737886445:0;vim index.html
+: 1737886779:0;cd /usr/share/nginx/html
+: 1737886784:0;vim index.html
+: 1737886951:0;git add .
+: 1737886962:0;git commit -m "arch_linux"
+: 1737886964:0;git push -u origin main
+: 1737886970:0;clear
+: 1737886971:0;exit
+: 1737887114:0;cd /usr/share/nginx/html
+: 1737887116:0;clear
+: 1737887120:0;ls
+: 1737887127:0;sudo vim index.html
+: 1737887198:0;cat index.html
+: 1737887202:0;clear
+: 1737887294:0;exit
+: 1737887318:0;notify-send "hi" "there"
+: 1737887386:0;clear
+: 1737887394:0;sudo systemctl status nginx
+: 1737904047:0;clear
+: 1737904048:0;ls
+: 1737904054:0;cd /etc/nginx
+: 1737904056:0;clear
+: 1737904059:0;ls
+: 1737904071:0;vim nginx.conf
+: 1737904098:0;cd /etc/nginx
+: 1737904106:0;sudo vim nginx.conf
+: 1737904133:0;cat nginx.conf
+: 1737904140:0;exit
+: 1737904152:0;sudo systemctl status nginx
+: 1737904165:0;sudo systemctl stop nginx
+: 1737904178:0;sudo systemctl start nginx
+: 1737904198:0;sudo systemctl status nginx
+: 1737904232:0;sudo systemctl enable nginx
+: 1737904239:0;sudo systemctl start nginx
+: 1737904245:0;ping localhost
+: 1737904263:0;exit
+: 1737904726:0;cd /etc/nginx
+: 1737904728:0;ls
+: 1737904740:0;cat nginx.conf
+: 1737905301:0;clear
+: 1737905308:0;sudo nginx -t
+: 1737905926:0;git add .
+: 1737905932:0;git commit -m "nginx"
+: 1737905935:0;git push -u origin main
+: 1737905939:0;exit
+: 1737912686:0;ssh -i mywebserver.pem ec2-user@13.215.202.1\
+
+: 1737912729:0;ssh -i first_key.pem ec2-user@13.215.202.1\
+
+: 1737912738:0;clear
+: 1737912741:0;ssh -i first_key.pem ec2-user@13.215.202.1\
+
+: 1737912792:0;chmod 400 first_key.pem\
+
+: 1737912811:0;ssh -i first_key.pem ec2-user@13.215.202.1\
+
+: 1737912850:0;ls -lart
+: 1737912856:0;clear
+: 1737912915:0;ssh -i first_key.pem ec2-user@13.215.202.1\
+
+: 1737947630:0;git add .
+: 1737947636:0;git commit -m "aws"
+: 1737947638:0;git push -u origin main
+: 1737947669:0;exit
+: 1737951576:0;sudo pacman -Syu
+: 1737952327:0;notify-send "yasin" "arafat" "how are you"
+: 1737952346:0;notify-send "yasin_arafat" "how are you?"
+: 1737952380:0;exit
+: 1738068796:0;code .
+: 1738071747:0;podman stop oracle-yasin
+: 1738071749:0;exit
+: 1738094771:0;clear 
+: 1738094778:0;git clone https://github.com/yasin-arafat-05/GenAI.git
+: 1738094941:0;code .
+: 1738095061:0;python create -m venv venv
+: 1738095072:0;python --version
+: 1738095095:0;python -m venv venv
+: 1738095114:0;source venv/bin/activate
+: 1738095117:0;clear
+: 1738095178:0;pip install pillow
+: 1738095191:0;pip install --upgrade pip
+: 1738132659:0;clear
+: 1738132684:0;git clone https://github.com/yasin-arafat-05/jupyterNotebook.git
+: 1738132790:0;code .
+: 1738160607:0;sudo pacman -S ssh
+: 1738160614:0;yay -S ssh
+: 1738160624:0;clear
+: 1738160639:0;ssh 192.168.1.107@durjoy
+: 1738160684:0;ssh durjoy@192.168.1.107
+: 1738160699:0;sudo ssh durjoy@192.168.1.107
+: 1738160711:0;ifconfig
+: 1738160774:0;clear
+: 1738160784:0;sudo systemctl start ssh
+: 1738160794:0;sudo systemctl status ssh\
+
+: 1738160843:0;sudo pacman -S openssh\
+
+: 1738160847:0;clear
+: 1738160857:0;sudo systemctl start sshd\
+sudo systemctl enable sshd\
+
+: 1738160866:0;ssh durjoy@192.168.1.107
+: 1738160879:0;sudo systemctl status sshd\
+
+: 1738160906:0;sudo ssh durjoy@192.168.1.107
+: 1738160917:0;ls
+: 1738160926:0;cd Desktop
+: 1738160930:0;mkdir durjoy
+: 1738160937:0;ls 
+: 1738160964:0;exit 
+: 1738160968:0;sudo ssh durjoy@192.168.1.107
+: 1738161048:0;clear
+: 1738161057:0;sudo pacman -S netstat
+: 1738161069:0;yay netstat
+: 1738161082:0;yay -S netstat
+: 1738161088:0;yay netstat
+: 1738161103:0;clear
+: 1738161111:0;sudo netstat -tulpn | grep :22
+: 1738161130:0;sudo ssh durjoy@192.168.1.107
+: 1738161254:0;ssh durjoy@192.168.1.107
+: 1738163203:0;ifconfig
+: 1738199723:0;git add .
+: 1738199734:0;git commit -m "rl_math"
+: 1738199736:0;git push -u origin main
+: 1738199741:0;exit
+: 1738211041:0;git add .
+: 1738211047:0;git commit -m "aws"
+: 1738211049:0;git push -u origin main
+: 1738211053:0;exit
+: 1738225198:0;sudo systemctl stop nginx
+: 1738229345:0;yay -S mysql-workbench\
+
+: 1738230163:0;yay -S libreoffice-fresh\
+
+: 1738292044:0;git clone https://github.com/yasin-arafat-05/DevOps.git
+: 1738292150:0;code .
+: 1738292251:0;git add .
+: 1738292260:0;git commit -m "ks8"
+: 1738292262:0;git push -u origin main
+: 1738313799:0;code .
+: 1738313828:0;/bin/python /home/yasin/.vscode/extensions/ms-python.python-2024.23.2025012801-linux-x64/python_files/printEnvVariablesToFile.py /home/yasin/.vscode/extensions/ms-python.python-2024.23.2025012801-linux-x64/python_files/deactivate/zsh/envVars.txt
+: 1738313870:0;git add .
+: 1738313885:0;git commit -m "first_class"
+: 1738313887:0;git push -u origin main
+: 1738313892:0;exit
+: 1738313933:0;clear
+: 1738313948:0;code .
+: 1738314501:0;git add .
+: 1738314506:0;git commit -m "rf"
+: 1738314509:0;git push -u origin main
+: 1738317456:0;git add .
+: 1738317463:0;git commit -m "rl"
+: 1738317467:0;git push -u origin main
+: 1738317473:0;exit
+: 1738323737:0;git add .
+: 1738323741:0;git commit -m "rl"
+: 1738323744:0;git push -u origin main
+: 1738323749:0;exit
+: 1738323752:0;clear
+: 1738323764:0;sudo pacman -Syu
+: 1738323807:0;clear
+: 1738323812:0;notify-send "yasin_arafat" "how are you?"
+: 1738323815:0;clear
+: 1738323817:0;exit
+: 1738323949:0;git add .
+: 1738323954:0;git commit -m "rl"
+: 1738323958:0;git push -u origin main
+: 1738323962:0;exit
+: 1738324046:0;git add .
+: 1738324050:0;git commit -m "rl"
+: 1738324052:0;git push -u origin main
+: 1738324186:0;git add .
+: 1738324191:0;git commit -m "rl"
+: 1738324194:0;git push -u origin main
+: 1738324288:0;git add .
+: 1738324291:0;git commit -m "rl"
+: 1738324294:0;git push -u origin main
+: 1738324301:0;exit
+: 1738324415:0;git add .
+: 1738324417:0;git commit -m "rl"
+: 1738324421:0;git push -u origin main
+: 1738324462:0;git add .
+: 1738324464:0;git commit -m "rl"
+: 1738324468:0;git push -u origin main
+: 1738324540:0;git add .
+: 1738324543:0;git commit -m "rl"
+: 1738324546:0;git push -u origin main
+: 1738325751:0;git add .
+: 1738325753:0;git commit -m "rl"
+: 1738325755:0;git push -u origin main
+: 1738325759:0;exit
+: 1738325818:0;git add .
+: 1738325822:0;git commit -m "rl"
+: 1738325824:0;git push -u origin main
+: 1738325942:0;git add .
+: 1738325945:0;git commit -m "rl"
+: 1738325949:0;git push -u origin main
+: 1738325953:0;exit
+: 1738328231:0;git add .
+: 1738328237:0;git commit -m "rl"
+: 1738328241:0;git push -u origin main
+: 1738328248:0;exit
+: 1738328331:0;git add .
+: 1738328333:0;git commit -m "rl"
+: 1738328336:0;git push -u origin main
+: 1738328371:0;git add .
+: 1738328373:0;git commit -m "rl"
+: 1738328376:0;git push -u origin main
+: 1738328379:0;exit
+: 1738333671:0;git add .
+: 1738333674:0;git commit -m "rl"
+: 1738333678:0;git push -u origin main
+: 1738333684:0;exit
+: 1738334288:0;git add .
+: 1738334290:0;git commit -m "rl"
+: 1738334293:0;git push -u origin main
+: 1738334297:0;exit
+: 1738334746:0;git add .
+: 1738334748:0;git commit -m "rl"
+: 1738334751:0;git push -u origin main
+: 1738334754:0;exit
+: 1738334855:0;git add .
+: 1738334857:0;git commit -m "rl"
+: 1738334861:0;git push -u origin main
+: 1738425721:0;git add . 
+: 1738425723:0;git commit -m "rl"
+: 1738425726:0;git push -u origin main
+: 1738425731:0;clear
+: 1738427094:0;git add . 
+: 1738427096:0;git commit -m "rl"
+: 1738427098:0;git push -u origin main
+: 1738427105:0;exit
+: 1738430748:0;git add . 
+: 1738430750:0;git commit -m "rl"
+: 1738430751:0;git push -u origin main
+: 1738430757:0;exit
+: 1738430802:0;git clone https://github.com/yasin-arafat-05/nodejs.git
+: 1738430805:0;clear
+: 1738430812:0;cd nodejs
+: 1738430813:0;clear
+: 1738430815:0;code .
+: 1738430874:0;node index.js
+: 1738430877:0;clear
+: 1738431096:0;sudo pacman -S nodejs npm\
+
+: 1738431122:0;clear
+: 1738431127:0;node index.js
+: 1738431130:0;clear
+: 1738431144:0;node main
+: 1738431146:0;clear
+: 1738431197:0;start
+: 1738431210:0;node start
+: 1738431214:0;clear
+: 1738431217:0;node init
+: 1738431219:0;clear
+: 1738431239:0;npm run start
+: 1738431336:0;clear
+: 1738461173:0;git add .
+: 1738461181:0;git commit -m "node_js"
+: 1738461183:0;git push -u origin main
+: 1738461187:0;exit
+: 1738461280:0;node env.js
+: 1738461359:0;clear
+: 1738461562:0;node
+: 1738461586:0;clear
+: 1738462191:0;node repl.js
+: 1738462440:0;clear
+: 1738462442:0;node repl.js
+: 1738462495:0;clear
+: 1738462498:0;node repl.js
+: 1738462625:0;clear
+: 1738462627:0;node repl.js
+: 1738463200:0;node argment.js yasin
+: 1738463215:0;node argment.js 
+: 1738463238:0;node argment.js  yasin arfat mondol
+: 1738463541:0;clear
+: 1738463543:0;node argment.js  yasin arfat mondol
+: 1738463547:0;clear
+: 1738463603:0;node argment.js  yasin arfat mondol
+: 1738463931:0;exit
+: 1738464435:0;clear
+: 1738464445:0;node argment.js  yasin arfat mondol
+: 1738464455:0;clear
+: 1738464473:0;node argment.js  --yasin --arfat --mondol
+: 1738464486:0;node i minimist
+: 1738464492:0;clear
+: 1738464499:0;npm i minimist
+: 1738464504:0;clear
+: 1738464507:0;node argment.js  --yasin --arfat --mondol
+: 1738466384:0;clear
+: 1738466390:0;node argment.js  --yasin --arfat --mondol
+: 1738466471:0;clear
+: 1738466472:0;exit
+: 1738478741:0;git add .
+: 1738478743:0;git commit -m "node_js"
+: 1738478745:0;git push -u origin main
+: 1738478748:0;exit
+: 1738478759:0;node argment.js  --yasin --arfat --mondol
+: 1738478763:0;clear
+: 1738481776:0;node format_variable.js
+: 1738481788:0;clear
+: 1738481800:0;node format_variable.js
+: 1738481809:0;clear
+: 1738481822:0;node format_variale.js
+: 1738481837:0;clear
+: 1738481841:0;node output.js
+: 1738482011:0;clear
+: 1738482016:0;node output.js
+: 1738482255:0;clear
+: 1738482271:0;node output.js
+: 1738482376:0;clear
+: 1738482379:0;node output.js
+: 1738482438:0;cler
+: 1738482439:0;cleawr
+: 1738482441:0;node output.js
+: 1738482459:0;clear
+: 1738482461:0;node output.js
+: 1738482496:0;clera
+: 1738482498:0;clear
+: 1738482520:0;node output.js
+: 1738482537:0;clear
+: 1738482543:0;node output.js
+: 1738483248:0;clear
+: 1738483298:0;node output.js
+: 1738483540:0;clear
+: 1738483542:0;node output.js
+: 1738483602:0;clear
+: 1738483606:0;node output.js
+: 1738484065:0;clear
+: 1738484067:0;node output.js
+: 1738484076:0;npm i progressbar
+: 1738484084:0;clear
+: 1738484097:0;npm install progress\
+
+: 1738484103:0;clear
+: 1738484113:0;node output.js
+: 1738484376:0;cjlear
+: 1738484377:0;clear
+: 1738484381:0;node output.js
+: 1738484402:0;claer
+: 1738484404:0;clear
+: 1738484407:0;node output.js
+: 1738484513:0;clear
+: 1738484515:0;node output.js
+: 1738484886:0;clear
+: 1738484921:0;npm install chalk-animation
+: 1738484943:0;clear
+: 1738485061:0;npm install chalk
+: 1738485064:0;clear
+: 1738485082:0;npm install chalk@4
+: 1738485084:0;clear
+: 1738485158:0;node output.js
+: 1738485256:0;clear
+: 1738485259:0;rm -rf node_modules package-lock.json\
+
+: 1738485268:0;npm install chalk-animation\
+
+: 1738485297:0;clear
+: 1738485301:0;node output.js
+: 1738485321:0;claer
+: 1738485322:0;clar
+: 1738485324:0;clear
+: 1738485363:0;npm uninstalll progressbar
+: 1738485387:0;clear
+: 1738485395:0;npm uninstall progressbar
+: 1738485400:0;clear
+: 1738485415:0;npm uninstall chalk-animation
+: 1738485418:0;clear
+: 1738485422:0;node output.js
+: 1738485431:0;clear
+: 1738485497:0;node output.js
+: 1738485588:0;clear
+: 1738485624:0;git add .
+: 1738485633:0;git commit -m "node_output"
+: 1738485634:0;clear
+: 1738485637:0;git push -u origin main
+: 1738485642:0;clear
+: 1738485895:0;npm install readline
+: 1738488273:0;clear
+: 1738488397:0;npm install promt-sync
+: 1738488423:0;npm i promt-sync
+: 1738488433:0;clear
+: 1738488436:0;node output.js
+: 1738488443:0;clear
+: 1738488447:0;npm i promt-sync
+: 1738488488:0;Fnpm install prompt-sync\
+
+: 1738488493:0;npm install prompt-sync\
+
+: 1738488842:0;clear
+: 1738488856:0;node output.js
+: 1738488860:0;clear
+: 1738488865:0;node input.js
+: 1738488884:0;clear
+: 1738488886:0;node input.js
+: 1738488964:0;git add .
+: 1738488971:0;git commit -m "node_input"
+: 1738488974:0;git push -u origin main
+: 1738488978:0;exit
+: 1738489175:0;clear
+: 1738489178:0;npm view
+: 1738489187:0;clear
+: 1738516590:0;npm install cowsay
+: 1738516629:0;npx cowsay i am learning
+: 1738516636:0;clear
+: 1738518188:0;exit
+: 1738518200:0;node our_own_package.js
+: 1738518386:0;clear
+: 1738518388:0;node our_own_package.js
+: 1738518399:0;clear
+: 1738518402:0;node our_own_package.js
+: 1738518521:0;clear
+: 1738518531:0;node our_own_package.js
+: 1738518638:0;clear
+: 1738518640:0;git add .
+: 1738518977:0;git commit -m "NPM"
+: 1738518984:0;git push -u origin main
+: 1738520304:0;node error.js
+: 1738520322:0;clear
+: 1738520324:0;node error.js
+: 1738520341:0;clear
+: 1738520343:0;node error.js
+: 1738520345:0;clear
+: 1738520471:0;node error.js
+: 1738520477:0;clear
+: 1738520636:0;node error.js
+: 1738520721:0;clear
+: 1738520810:0;node error.js
+: 1738521338:0;clear
+: 1738521341:0;node error.js
+: 1738521407:0;clear
+: 1738521408:0;node error.js
+: 1738521584:0;clear
+: 1738521587:0;node error.js
+: 1738521609:0;clear
+: 1738521612:0;node error.js
+: 1738521733:0;clear
+: 1738521734:0;node error.js
+: 1738557443:0;clear
+: 1738557735:0;echo "# node_express_project" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git branch -M main\
+git remote add origin https://github.com/yasin-arafat-05/node_express_project.git\
+git push -u origin main
+: 1738557822:0;code .
+: 1738557850:0;git branch --h
+: 1738557896:0;git branch -c node
+: 1738557907:0;git branch list
+: 1738557911:0;clear
+: 1738557973:0;git branch
+: 1738558016:0;git branch -d list
+: 1738558026:0;git branch -d node
+: 1738558028:0;git branch
+: 1738558030:0;clear
+: 1738558043:0;git switch -c node
+: 1738558049:0;clear
+: 1738558053:0;git branch
+: 1738558054:0;clear
+: 1738558545:0;npm init
+: 1738558607:0;clear
+: 1738558640:0;npm install nodemon
+: 1738558776:0;clear
+: 1738558783:0;node start 
+: 1738558787:0;claer
+: 1738558788:0;clear
+: 1738558790:0;npm start 
+: 1738559656:0;git add . 
+: 1738559666:0;git commit -m "initial-commit"
+: 1738559674:0;git push -u origin node
+: 1738559678:0;clear
+: 1738561215:0;npm install dotenv
+: 1738561219:0;clear
+: 1738561222:0;npm list
+: 1738561225:0;clear
+: 1738561226:0;exit
+: 1738561446:0;clear
+: 1738561448:0;npm start
+: 1738561628:0;curl http://localhost:5001/\
+
+: 1738561636:0;curl http://localhost:5000/\
+
+: 1738569400:0;clear
+: 1738569421:0;git add "methods/get-request.js"
+: 1738569430:0;git commit -m "get"
+: 1738569432:0;git push -u origin node
+: 1738569577:0;git branch main
+: 1738569587:0;git switch main
+: 1738569603:0;git branch
+: 1738569614:0;git switch branch main
+: 1738569675:0;clear
+: 1738569679:0;git switch main
+: 1738569688:0;git add .
+: 1738569697:0;git commit -m "initial"
+: 1738569700:0;clear
+: 1738569703:0;git switch main
+: 1738569709:0;clear
+: 1738569776:0;git add .
+: 1738569779:0;git commit -m "initial"
+: 1738569787:0;git push -u origin main
+: 1738569792:0;clear
+: 1738569799:0;git branch
+: 1738569804:0;git switch node
+: 1738569840:0;git add .
+: 1738569842:0;git commit -m "initial"
+: 1738569853:0;git push -u origin node
+: 1738569857:0;exit
+: 1738569864:0;clear
+: 1738571149:0;npm start
+: 1738571182:0;npm list
+: 1738571205:0;npm install node_crud@1.0.0
+: 1738571214:0;clear
+: 1738571217:0;node start 
+: 1738571242:0;clear
+: 1738571247:0;node start 
+: 1738571294:0;clear
+: 1738571301:0;nodemon server.js
+: 1738571314:0;node start 
+: 1738571316:0;clear
+: 1738571319:0;node server.js
+: 1738571329:0;clear
+: 1738571345:0;npm install dotenv, nodemon
+: 1738571353:0;npm install dotenv
+: 1738571362:0;npm install nodemon
+: 1738571364:0;clear
+: 1738571374:0;npm start
+: 1738576495:0;clear
+: 1738576498:0;git add .
+: 1738576503:0;git commit -m "initial"
+: 1738576507:0;git push -u origin node
+: 1738577205:0;git switch branch mian
+: 1738577211:0;git switch main
+: 1738577215:0;clear
+: 1738577228:0;git branch -c express_basic
+: 1738577236:0;git branch 
+: 1738577248:0;git switch express_basic
+: 1738577252:0;clear
+: 1738577265:0;npm init
+: 1738577312:0;clear
+: 1738577355:0;npm uninstall touch
+: 1738577366:0;npm uninstall undefsafe
+: 1738577380:0;npm uninstall semver, readdirp
+: 1738577390:0;clear
+: 1738577481:0;npm uninstall to-regex-range, supports-color, simple-update-notifier, semver, pstree.remy, picomatch, normalize-path, ms, minimatch, is-number, is-glob, is-extaglob, is-binar-path
+: 1738577508:0;npm uninstall to-regex-range, supports-color 
+: 1738577514:0;clear
+: 1738577524:0;npm uninstall to-regex-range
+: 1738577526:0;clear
+: 1738577582:0;rm -rf node_modules package-lock.json\
+npm uninstall $(jq -r '.dependencies | keys[]' package.json)\
+npm uninstall $(jq -r '.devDependencies | keys[]' package.json)\
+
+: 1738577594:0;claer
+: 1738577596:0;clear
+: 1738577599:0;npm init
+: 1738577652:0;clear
+: 1738577681:0;npm install express
+: 1738577960:0;clear
+: 1738577961:0;exit
+: 1738577964:0;clear
+: 1738577986:0;npm start
+: 1738578017:0;clear
+: 1738578021:0;npm start
+: 1738579326:0;clear
+: 1738579329:0;npm start
+: 1738579611:0;clear
+: 1738579614:0;npm start
+: 1738579855:0;clear
+: 1738579857:0;code .
+: 1738579878:0;clear
+: 1738579917:0;npx express-generator
+: 1738579936:0;clear
+: 1738580248:0;npm install
+: 1738580330:0;exit
+: 1738581180:0;DEBUG=express-app:* npm start
+: 1738585178:0;clear
+: 1738585187:0;code .
+: 1738585206:0;git branch
+: 1738585207:0;clear
+: 1738585210:0;git add .
+: 1738585220:0;git commit -m "basic"
+: 1738585228:0;git push -u origin express_basic
+: 1738585236:0;clear
+: 1738585308:0;git switch main
+: 1738585310:0;clear
+: 1738585318:0;git add .
+: 1738585321:0;git commit -m "basic"
+: 1738585327:0;git push -u origin main
+: 1738585330:0;clear
+: 1738585368:0;git switch -c middleware 
+: 1738585369:0;clear
+: 1738585392:0;npm init
+: 1738585426:0;exit
+: 1738585432:0;clear
+: 1738585442:0;npm install express
+: 1738585451:0;clear
+: 1738585830:0;npm stat
+: 1738585831:0;clear
+: 1738585833:0;npm start
+: 1738585866:0;clear
+: 1738585873:0;npm install nodemon
+: 1738585880:0;clear
+: 1738585883:0;npm start
+: 1738591050:0;clear
+: 1738591056:0;git add .
+: 1738591076:0;git commit -m "middleware"
+: 1738591090:0;git push -u origin middleware
+: 1738591129:0;git branch
+: 1738591150:0;git switch node
+: 1738591154:0;clear
+: 1738591174:0;npm install
+: 1738591179:0;clear
+: 1738591183:0;npm start
+: 1738643903:0;clear
+: 1738643905:0;git add .
+: 1738643926:0;git commit -m "nodejs.backend"
+: 1738643932:0;git push -u origin node
+: 1738644026:0;clear
+: 1738644034:0;git branch
+: 1738644045:0;git branch main
+: 1738644052:0;git switch main
+: 1738644053:0;clear
+: 1738644078:0;git switch -c express_project
+: 1738644083:0;claer
+: 1738644097:0;clear
+: 1738644101:0;npm init
+: 1738644173:0;npm install nodemon
+: 1738644227:0;clear
+: 1738644231:0;npm install nodemon
+: 1738644354:0;clear
+: 1738644360:0;npm install express
+: 1738644417:0;npm install dotenv
+: 1738644421:0;exit
+: 1738644866:0;clear
+: 1738644873:0;npm dev
+: 1738644882:0;clear
+: 1738644925:0;npm dev
+: 1738644935:0;npm run dev
+: 1738657446:0;npm dev
+: 1738657450:0;clear
+: 1738657452:0;npm start dev
+: 1738657462:0;clear
+: 1738657466:0;npm run dev
+: 1738662447:0;yay -S zoom\
+
+: 1738662468:0;clear
+: 1738662471:0;yay -S zoom\
+
+: 1738662888:0;exit
+: 1738663301:0;clear
+: 1738671305:0;reboot
+: 1738671532:0;poweroff
+: 1738672330:0;npm install express-async-handler
+: 1738672333:0;clear
+: 1738672611:0;npm start dev
+: 1738674147:0;ifconfig
+: 1738674253:0;clear
+: 1738674279:0;ip route
+: 1738674310:0;ifconfig
+: 1738674352:0;ipcalc 192.168.1.1 255.255.255.0
+: 1738683871:0;ifconfig
+: 1738685464:0;mongosh "mongodb+srv://cluster0.jtbim.mongodb.net/" --apiVersion 1 --username yasin
+: 1738685537:0;[200~yay -S mongosh-bin
+: 1738685553:0;yay -S mongosh-bin\
+
+: 1738685613:0;clear
+: 1738685617:0;mongosh "mongodb+srv://cluster0.jtbim.mongodb.net/" --apiVersion 1 --username yasin
+: 1738685676:0;clear
+: 1738685678:0;ifconfig
+: 1738686267:0;clear
+: 1738686271:0;mongosh "mongodb+srv://cluster0.jtbim.mongodb.net/" --apiVersion 1 --username yasin
+: 1738687202:0;ip route
+: 1738687960:0;exit
+: 1738718390:0;yay mongodb-compus
+: 1738718452:0;clear
+: 1738718454:0;yay -S mongodb-compass\
+
+: 1738718525:0;exit
+: 1738720635:0;chezmoi diff
+: 1738720639:0;ls
+: 1738720645:0;clear
+: 1738720682:0;chezmoi add .fonts.conf
+: 1738720695:0;git add .
+: 1738720702:0;clear
+: 1738720703:0;ls
+: 1738720713:0;clear
+: 1738720718:0;chezmoi init
+: 1738720721:0;clear
+: 1738720722:0;ls
+: 1738720755:0;git remote add origin https://github.com/yasin-arafat-05/dotfiles.git
+: 1738720761:0;clear
+: 1738720794:0;chezmoi cd
+: 1738720796:0;ls
+: 1738720815:0;chezmoi .gitconfig
+: 1738720827:0;chezmoi add .gitconfig
+: 1738720835:0;cd ..
+: 1738720837:0;clear
+: 1738720838:0;ls
+: 1738720856:0;chezmoi add .gitconfig
+: 1738720879:0;chezmoi add .zsh_history
